@@ -15,7 +15,7 @@ public class O3 {
 	public static void main(String[] args) {
 		String nTxt = showInputDialog("Les inn et heltall n > 0");
 		int n = parseInt(nTxt);
-		if (n == 0 || n < 0) {
+		if (n <= 0) {
 			System.out.println("n må være høyere enn 0!");
 		} else {
 			int svar = nFakultet(n);

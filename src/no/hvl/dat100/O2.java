@@ -29,7 +29,7 @@ public class O2 {
 		int D = 59;
 		int E = 49;
 		int F = 39;
-		if (poeng > A || poeng < 0 || poeng == 0) {
+		if (poeng > A || poeng <= 0) {
 			System.out.println("Ugyldig verdi!\nLes inn verdi på nytt");
 		} else {
 			if (poeng > F) {
