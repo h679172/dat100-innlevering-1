@@ -15,7 +15,7 @@ public class O1 {
 			String belopTxt = showInputDialog("Skriv inn beløpet (høyere enn 0):");
 			int i = parseInt(belopTxt);
 			if (i <= 0) {
-				System.out.println("Angi et beløp høyere enn 0!");
+				System.out.println("Ugyldig verdi!\nAngi et beløp høyere enn 0.");
 			} else {
 				System.out.println(utRekningSkatt(i));
 			}

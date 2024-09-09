@@ -30,7 +30,7 @@ public class O2 {
 		int E = 49;
 		int F = 39;
 		if (poeng > A || poeng <= 0) {
-			System.out.println("Ugyldig verdi!\nLes inn verdi på nytt");
+			System.out.println("Ugyldig verdi!\nLes inn verdi på nytt.");
 		} else {
 			if (poeng > F) {
 				karakter = 'E';

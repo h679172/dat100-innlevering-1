@@ -16,7 +16,7 @@ public class O3 {
 		String nTxt = showInputDialog("Les inn et heltall n > 0");
 		int n = parseInt(nTxt);
 		if (n <= 0) {
-			System.out.println("n må være høyere enn 0!");
+			System.out.println("Ugyldig verdi!\nn må være høyere enn 0.");
 		} else {
 			int svar = nFakultet(n);
 			System.out.println(makeString(svar, n));
