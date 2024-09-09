@@ -18,11 +18,11 @@ public class O3 {
 		if (n == 0 || n < 0) {
 			System.out.println("n må være høyere enn 0!");
 		} else {
-			int svar = utRegningStart(n);
+			int svar = nFakultet(n);
 			System.out.println(makeString(svar, n));
 		}
 	}
-	public static int utRegningStart(int n) {
+	public static int nFakultet(int n) {
 		int svar = 1;
 		for (int i = 1; i <= n; i++) {
 			svar = svar * i;
@@ -30,7 +30,7 @@ public class O3 {
 		}
 		return svar;
 	}
-	public static int utRegningSlutt(int svar, int n) {
+	public static int utRekning(int svar, int n) {
 		return svar * (n - 1) * n;
 	}
 	public static String makeString(int svar, int n) {
@@ -44,6 +44,6 @@ public class O3 {
 				utTxt = utTxt + "*" + i;
 			}
 		}
-		return ("!n = (" + utTxt + ") = " + svar + "\n((" + utTxt +  ") * (n-1) * n) er: " + utRegningSlutt(svar, n));
+		return ("!n = (" + utTxt + ") = " + svar + "\n((" + utTxt +  ") * (n-1) * n) er: " + utRekning(svar, n));
 	}
 }
