@@ -14,8 +14,11 @@ public class O1 {
 		public static void main(String[] args) {	
 			String belopTxt = showInputDialog("Skriv inn beløpet:");
 			int i = parseInt(belopTxt);
-			System.out.println(utRekningSkatt(i));
-			
+			if (i == 0 || i < 0) {
+				System.out.println("Angi en verdi høyere enn 0");
+			} else {
+				System.out.println(utRekningSkatt(i));
+			}
 		}
 		public static String utRekningSkatt(int i) {
 			int trinn = 0;
